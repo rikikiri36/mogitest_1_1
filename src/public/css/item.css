@@ -1,0 +1,286 @@
+.content {
+  background-color: #fff;
+}
+
+/* タブ */
+.toppage-list{
+  display: flex;
+  gap: 50px;
+  border-bottom:#5F5F5F 2px solid ;
+  padding: 50px 0 0 50px;
+}
+
+.toppage-list__tab{
+  font-size: 24px;
+  color: #0f0f0f;
+}
+
+.active {
+  color: #FF5555;
+}
+
+/* 商品詳細 */
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+}
+
+/* 左側 */
+.item-left {
+  flex: 1;
+  padding-right: 20px;
+  /* max-width: 500px; */
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/* 右側 */
+.item-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+.item-name {
+  font-size: 45px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.item-brand {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.item-price {
+  font-size: 30px;
+}
+
+.item-price-en {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.item-price-zeikomi {
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+/* いいね */
+.like-container {
+  margin-top: 10px;
+}
+
+.icon-group {
+  display: flex;
+  gap: 40px;
+}
+
+.like-group, .comment-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like-icon i {
+  font-size: 28px;
+  color: #e0e0e0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.like-icon-nouser i {
+  pointer-events: none;
+}
+
+.like-count,
+.comment-count {
+  font-size: 16px;
+  color: #333;
+  margin-top: 2px;
+}
+
+.like-icon.active i {
+  color: #FCAF17;
+  transform: scale(1.2);
+}
+
+.comment-icon i {
+  font-size: 28px;
+  color: #bdbdbd;
+}
+
+.item__button {
+  display: block;
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FF5555;
+  color: #FFF;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.soldout {
+  display: block;
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  color: #FFF;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.sub-title{
+  margin-top: 30px;
+  font-size: 36px;
+}
+
+.item-description {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.label-title{
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.item-groups {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.category-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.category-name{
+  background-color: #e2e1e1;
+  border-radius: 20px;
+  padding: 4px 12px;
+  margin-right: 10px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.item_condition{
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* コメント */
+.comment-title{
+  color: #5F5F5F;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.nodata{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.comment-groups{
+  margin-bottom: 10px;
+}
+
+.comment__inner {
+  display: flex;
+  align-items: center;
+}
+
+.comment-profile__img-container {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.comment-profile__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment-profile__img-container.no-image {
+  background-color: #ccc;
+}
+
+.comment-profile__name{
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.comment-detail{
+  background-color: #e2e1e1;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.comment__textarea{
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  border: #5F5F5F 1px solid;
+  border-radius: 5px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.comment__error-message {
+  color: #FF5555;
+  font-size: 14px;
+  min-height: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  .item-container {
+    flex-direction: column;
+  }
+
+  .item-left, .item-right {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .item-right {
+    padding-top: 20px;
+  }
+}

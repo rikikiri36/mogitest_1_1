@@ -1,0 +1,80 @@
+.content {
+  background-color: #fff;
+  padding-bottom: 70px;
+}
+
+/* タブ */
+.toppage-list{
+  display: flex;
+  gap: 50px;
+  border-bottom:#5F5F5F 2px solid ;
+  padding: 50px 0 0 50px;
+}
+
+.toppage-list__tab{
+  font-size: 24px;
+  color: #0f0f0f;
+}
+
+.active {
+  color: #FF5555;
+}
+
+/* 商品一覧・カセット */
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3%;
+  padding: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .item-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item-group {
+  position: relative;
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+  font-size: 18px;
+  color: #0f0f0f;
+  margin: 0;
+}
+
+.sold-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.sold-card span {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+
+.nodata{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 80px;
+}
