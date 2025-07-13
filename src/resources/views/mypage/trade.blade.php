@@ -97,7 +97,7 @@
             <span class="image-badge" id="image-badge"></span>
           </label>
           <input type="file" name="image" id="imageInput" style="display: none;">
-          <button class="send-button" type="submit"><img class="send-button" src="{{ asset('storage/images/send.jpg') }}" alt="送信"></button>
+          <button class="send-button" type="submit"><img class="send-button" src="{{ asset('send.jpg') }}" alt="送信"></button>
         </div>
       </div>
     </form>
