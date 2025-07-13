@@ -18,13 +18,23 @@
    composer install
 2. 「.env.example」をコピーして「.env」ファイルを作成  
    cp .env.example .env
-3. .envに下記環境変数を設定（stripeのAPIキーは発行したものを入力する）
+3. 「.env」に下記環境変数を設定（stripeのAPIキーは発行したものを入力する）
   - DB_HOST=mysql
   - DB_DATABASE=laravel_db
   - DB_USERNAME=laravel_user
   - DB_PASSWORD=laravel_pass
-  - STRIPE_KEY=pk_test_XXXXXXX
-  - STRIPE_SECRET=sk_test_XXXXXX
+    
+  - MAIL_MAILER=smtp
+  - MAIL_HOST=mailhog
+  - MAIL_PORT=1025
+  - MAIL_USERNAME=null
+  - MAIL_PASSWORD=null
+  - MAIL_ENCRYPTION=null
+  - MAIL_FROM_ADDRESS=test@example.com
+  - MAIL_FROM_NAME="${APP_NAME}"
+
+  - STRIPE_KEY=pk_test_XXXXXXXXXXXXXXXX
+  - STRIPE_SECRET=sk_test_XXXXXXXXXXXXXXX     
 4. Laravelの初期設定  
    php artisan key:generate  
    php artisan migrate:fresh  
