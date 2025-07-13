@@ -43,7 +43,6 @@
    mkdir -p storage/app/public/images/items  
 6. 下記スプレッドシートより商品画像をDLして５で作成したディレクトリに保管  
    https://docs.google.com/spreadsheets/d/1AFiW_FhK4WJRihzImjOC8EX3l_x-bAOl7pME1whRZEk/edit?gid=352252877#gid=352252877  
-　　↑ここから商品画像をDLして６のパスに保存する  
 7. シンボリックリンク作成  
    php artisan storage:link
 
