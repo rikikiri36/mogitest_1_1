@@ -9,14 +9,14 @@
 ## 環境構築
 
 ### １.Dockerビルド
-1. git clone https://github.com/rikikiri36/mogitest_1
-2. docker compose up -d --build
+   git clone https://github.com/rikikiri36/mogitest_1_1  
+   docker compose up -d --build
 
 ### ２.Laravel環境構築
-1. srcに移動してcomposer installを実行
-   cd src
+1. srcに移動してcomposer installを実行  
+   cd src  
    composer install
-2. 「.env.example」をコピーして「.env」ファイルを作成
+2. 「.env.example」をコピーして「.env」ファイルを作成  
    cp .env.example .env
 3. .envに下記環境変数を設定（stripeのAPIキーは発行したものを入力する）
   - DB_HOST=mysql
@@ -25,16 +25,16 @@
   - DB_PASSWORD=laravel_pass
   - STRIPE_KEY=pk_test_XXXXXXX
   - STRIPE_SECRET=sk_test_XXXXXX
-4. Laravelの初期設定
-   php artisan key:generate
-   php artisan migrate:fresh
-   php artisan db:seed
-5. 商品画像保存用ディレクトリを作成
-   mkdir -p storage/app/public/images/items
-6. 下記スプレッドシートより商品画像をDLして５で作成したディレクトリに保管
-   https://docs.google.com/spreadsheets/d/1AFiW_FhK4WJRihzImjOC8EX3l_x-bAOl7pME1whRZEk/edit?gid=352252877#gid=352252877
-　　↑ここから商品画像をDLして６のパスに保存する
-7. シンボリックリンク作成
+4. Laravelの初期設定  
+   php artisan key:generate  
+   php artisan migrate:fresh  
+   php artisan db:seed  
+5. 商品画像保存用ディレクトリを作成  
+   mkdir -p storage/app/public/images/items  
+6. 下記スプレッドシートより商品画像をDLして５で作成したディレクトリに保管  
+   https://docs.google.com/spreadsheets/d/1AFiW_FhK4WJRihzImjOC8EX3l_x-bAOl7pME1whRZEk/edit?gid=352252877#gid=352252877  
+　　↑ここから商品画像をDLして６のパスに保存する  
+7. シンボリックリンク作成  
    php artisan storage:link
 
 
@@ -52,12 +52,12 @@
 
 ## URL
 
-1. 開発環境
+1. 開発環境  
    http://localhost/
-2. phpMyAdmin
+2. phpMyAdmin  
    http://localhost:8080/
-3. mailhog
-   購入者が取引完了後、出品者にメールが自動配信される
+3. mailhog  
+   購入者が取引完了後、出品者にメールが自動配信される  
    http://localhost:8025/
 
 ## テストアカウント
