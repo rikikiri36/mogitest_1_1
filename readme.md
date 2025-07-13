@@ -18,7 +18,7 @@
    composer install
 2. 「.env.example」をコピーして「.env」ファイルを作成  
    cp .env.example .env
-3. 「.env」に下記環境変数を設定（stripeのAPIキーは発行したものを入力する）
+3. 「.env」に下記環境変数を設定（stripeのAPIキーは発行したものを入力する、ただし「カード払い」を行わなければ不要）
   - DB_HOST=mysql
   - DB_DATABASE=laravel_db
   - DB_USERNAME=laravel_user
