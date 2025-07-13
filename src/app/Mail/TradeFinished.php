@@ -36,7 +36,7 @@ class TradeFinished extends Mailable
      */
     public function build()
     {
-        return $this->subject('商品が購入者に評価されました')   // タイトル 
+        return $this->subject('購入者に評価されました')   // タイトル 
             ->view('mails.finish')                        // 本文
             ->with([
                 'tradeId' => $this->tradeId,
